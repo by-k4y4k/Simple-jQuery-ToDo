@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(to right, rgb(231, 114, 114), #d022a5);
+}
+
+main {
+  background-color: $light-grey;
+  box-shadow: 0px 0px 28px 13px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  width: $list-width;
+}
+
+h1 {
+  background-color: $blue;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  height: $box-height;
+}
+
+input {
+  border: 3px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  padding: 13px 13px 13px 20px;
+  width: 100%;
+}
+
+input:focus {
+  border: 3px solid $blue;
+  outline: none;
+}
+
+span {
+  background: #e74c3c;
+  height: $box-height;
+  margin-right: $box-height/2;
+  width: 0;
+  display: inline-block;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+
+.fa-plus {
+  float: right;
+}
+
+li:hover span {
+  width: $box-height;
+  opacity: 1;
+}
+
+h1,
+ul {
+  margin: 0;
+}
+
+input:focus,
+li {
+  background-color: white;
+}
+
+li:nth-child(2n),
+input,
+main {
+  background-color: $light-grey;
+}

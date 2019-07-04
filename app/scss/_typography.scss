@@ -1,0 +1,34 @@
+h1 {
+  font-size: $font-header;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+li {
+  color: #555;
+  line-height: $box-height;
+}
+
+input {
+  color: $blue;
+  font-size: $font-input;
+}
+
+span {
+  text-align: center;
+}
+
+body,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+span {
+  color: white;
+}
+
+.task-completed {
+  color: gray;
+  text-decoration: line-through;
+}
