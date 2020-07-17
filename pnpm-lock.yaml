@@ -1,6 +1,6 @@
 devDependencies:
   eslint: 6.8.0
-  eslint-config-google: 0.13.0_eslint@6.8.0
+  eslint-config-google: 0.14.0_eslint@6.8.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.0.0:
@@ -218,7 +218,7 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-google/0.13.0_eslint@6.8.0:
+  /eslint-config-google/0.14.0_eslint@6.8.0:
     dependencies:
       eslint: 6.8.0
     dev: true
@@ -227,7 +227,7 @@ packages:
     peerDependencies:
       eslint: '>=5.16.0'
     resolution:
-      integrity: sha512-ELgMdOIpn0CFdsQS+FuxO+Ttu4p+aLaXHv9wA9yVnzqlUGV7oN/eRRnJekk7TCur6Cu2FXX0fqfIXRBaM14lpQ==
+      integrity: sha512-WsbX4WbjuMvTdeVL6+J3rK1RGhCTqjsFjX7UMSMgZiyxxaNLkoJENbrGExzERFeoTpGw3F3FypTiWAP9ZXzkEw==
   /eslint-scope/5.1.0:
     dependencies:
       esrecurse: 4.2.1
@@ -908,4 +908,4 @@ packages:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
   eslint: 6.8.0
-  eslint-config-google: 0.13.0
+  eslint-config-google: 0.14.0
