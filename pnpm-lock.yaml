@@ -1,6 +1,6 @@
 devDependencies:
-  eslint: 7.5.0
-  eslint-config-google: 0.14.0_eslint@7.5.0
+  eslint: 7.9.0
+  eslint-config-google: 0.14.0_eslint@7.9.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.0.0:
@@ -17,25 +17,42 @@ packages:
     dev: true
     resolution:
       integrity: sha512-UFMC4ZeFC48Tpvj7C8UgLvtkaUuovQX+5xNWrsIoMG8o2z+XFKjKaN9iVmS84dPwVN00W4wPmqvYoZF3EGAsfw==
+  /@eslint/eslintrc/0.1.3:
+    dependencies:
+      ajv: 6.12.4
+      debug: 4.1.1
+      espree: 7.3.0
+      globals: 12.4.0
+      ignore: 4.0.6
+      import-fresh: 3.2.1
+      js-yaml: 3.13.1
+      lodash: 4.17.19
+      minimatch: 3.0.4
+      strip-json-comments: 3.1.1
+    dev: true
+    engines:
+      node: ^10.12.0 || >=12.0.0
+    resolution:
+      integrity: sha512-4YVwPkANLeNtRjMekzux1ci8hIaH5eGKktGqR0d3LWsKNn5B2X/1Z6Trxy7jQXl9EBGE6Yj02O+t09FMeRllaA==
   /@types/color-name/1.1.1:
     dev: true
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
-  /acorn-jsx/5.2.0_acorn@7.3.1:
+  /acorn-jsx/5.2.0_acorn@7.4.0:
     dependencies:
-      acorn: 7.3.1
+      acorn: 7.4.0
     dev: true
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0
     resolution:
       integrity: sha512-HiUX/+K2YpkpJ+SzBffkM/AQ2YE03S0U1kjTLVpoJdhZMOWy8qvXVN9JdLqv2QsaQ6MPYQIuNmwD8zOiYUofLQ==
-  /acorn/7.3.1:
+  /acorn/7.4.0:
     dev: true
     engines:
       node: '>=0.4.0'
     hasBin: true
     resolution:
-      integrity: sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
+      integrity: sha512-+G7P8jJmCHr+S+cLfQxygbWhXy+8YTVGzAkpEbcLo2mLoL7tij/VG41QSHACSf5QgYRhMZYHuNc6drJaO0Da+w==
   /ajv/6.10.0:
     dependencies:
       fast-deep-equal: 2.0.1
@@ -45,6 +62,15 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nffhOpkymDECQyR0mnsUtoCE8RlX38G0rYP+wgLWFyZuUyuuojSSvi/+euOiQBIn63whYwYVIIH1TvE3tu4OEg==
+  /ajv/6.12.4:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-json-stable-stringify: 2.0.0
+      json-schema-traverse: 0.4.1
+      uri-js: 4.2.2
+    dev: true
+    resolution:
+      integrity: sha512-eienB2c9qVQs2KWexhkrdMLVDoIQCz5KSeLxwg9Lzk4DOfBtIK9PQwwufcsn1jjGuf9WZmqPMbGxOzfcuphJCQ==
   /ansi-colors/4.1.1:
     dev: true
     engines:
@@ -200,9 +226,9 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /eslint-config-google/0.14.0_eslint@7.5.0:
+  /eslint-config-google/0.14.0_eslint@7.9.0:
     dependencies:
-      eslint: 7.5.0
+      eslint: 7.9.0
     dev: true
     engines:
       node: '>=0.10.0'
@@ -233,9 +259,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
-  /eslint/7.5.0:
+  /eslint/7.9.0:
     dependencies:
       '@babel/code-frame': 7.0.0
+      '@eslint/eslintrc': 0.1.3
       ajv: 6.10.0
       chalk: 4.1.0
       cross-spawn: 7.0.3
@@ -245,7 +272,7 @@ packages:
       eslint-scope: 5.1.0
       eslint-utils: 2.1.0
       eslint-visitor-keys: 1.3.0
-      espree: 7.2.0
+      espree: 7.3.0
       esquery: 1.3.1
       esutils: 2.0.2
       file-entry-cache: 5.0.1
@@ -276,17 +303,17 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-vlUP10xse9sWt9SGRtcr1LAC67BENcQMFeV+w5EvLEoFe3xJ8cF1Skd0msziRx/VMC+72B4DxreCE+OR12OA6Q==
-  /espree/7.2.0:
+      integrity: sha512-V6QyhX21+uXp4T+3nrNfI3hQNBDa/P8ga7LoQOenwrlEFXrEnUEE+ok1dMtaS3b6rmLXhT1TkTIsG75HMLbknA==
+  /espree/7.3.0:
     dependencies:
-      acorn: 7.3.1
-      acorn-jsx: 5.2.0_acorn@7.3.1
+      acorn: 7.4.0
+      acorn-jsx: 5.2.0_acorn@7.4.0
       eslint-visitor-keys: 1.3.0
     dev: true
     engines:
       node: ^10.12.0 || >=12.0.0
     resolution:
-      integrity: sha512-H+cQ3+3JYRMEIOl87e7QdHX70ocly5iW4+dttuR8iYSPr/hXKFb+7dBsZ7+u1adC4VrnPlTkv0+OwuPnDop19g==
+      integrity: sha512-dksIWsvKCixn1yrEXO8UosNSxaDoSYpq9reEjZSbHLpT5hpaCAKTLBwq0RHtLrIr+c0ByiYzWT8KTMRzoRCNlw==
   /esprima/4.0.1:
     dev: true
     engines:
@@ -332,6 +359,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+  /fast-deep-equal/3.1.3:
+    dev: true
+    resolution:
+      integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
   /fast-json-stable-stringify/2.0.0:
     dev: true
     resolution:
@@ -424,6 +455,15 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-PpuksHKGt8rXfWEr9m9EHIpgyyaltBy8+eF6GJM0QCAxMgxCfucMF3mjecK2QsJr0amJW7gTqh5/wht0z2UhEQ==
+  /import-fresh/3.2.1:
+    dependencies:
+      parent-module: 1.0.1
+      resolve-from: 4.0.0
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
   /imurmurhash/0.1.4:
     dev: true
     engines:
@@ -685,7 +725,7 @@ packages:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
   /table/5.4.1:
     dependencies:
-      ajv: 6.10.0
+      ajv: 6.12.4
       lodash: 4.17.19
       slice-ansi: 2.1.0
       string-width: 3.1.0
@@ -750,5 +790,5 @@ packages:
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
-  eslint: 7.5.0
+  eslint: 7.9.0
   eslint-config-google: 0.14.0
